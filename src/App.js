@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import { Header } from './sections/Header';
+import { Home } from './sections/Home';
+import { Event } from './sections/Event';
+import { Footer } from './sections/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { Container } from 'react-bootstrap';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container fluid style={{ padding: '0' }}>
+        <Header />
+        <Home />
+      </Container>
+    </>
   );
-}
+};
 
 export default App;
