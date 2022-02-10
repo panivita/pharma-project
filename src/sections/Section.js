@@ -11,7 +11,7 @@ import './custom.css';
 export const Section = () => {
   return (
     <Row className='mainContainer'>
-      <Col xs={12} md={3} className='centerContainer'>
+      <Col xs={12} md={4} lg={3} className='centerContainer'>
         <div className='ellipseContainer'>
           <div className='positionContainer'>
             <img alt='ellipse' src={Ellipse} className='ellipseSize' />
@@ -35,7 +35,7 @@ export const Section = () => {
           See efficacy and trial data
         </a>
       </Col>
-      <Col xs={12} md={3} className='centerContainer'>
+      <Col xs={12} md={4} lg={3} className='centerContainer'>
         <div className='ellipseContainer'>
           <div className='positionContainer'>
             <img alt='ellipse' src={Ellipse} className='ellipseSize' />
@@ -56,7 +56,7 @@ export const Section = () => {
           Learn more about quality of life improvements
         </a>
       </Col>
-      <Col xs={12} md={3} className='centerContainer'>
+      <Col xs={12} md={4} lg={3} className='centerContainer'>
         <div className='ellipseContainer'>
           <div className='positionContainer'>
             <img alt='ellipse' src={Ellipse} className='ellipseSize' />

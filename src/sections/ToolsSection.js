@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import ToolsImage1 from '../images/section-image-1.png';
 import ToolsImage2 from '../images/section-image-2.png';
@@ -13,7 +14,9 @@ export const ToolsSection = () => {
           <Card.Img variant='top' src={ToolsImage1} />
           <Card.Body>
             <Card.Title>Dosing guide</Card.Title>
-            <Card.Text>Adtralza® has a straightforward dosing regimen, with 150 mg prefilled syringes(1).</Card.Text>
+            <Card.Text className='cardTextContent'>
+              Adtralza® has a straightforward dosing regimen, with 150 mg prefilled syringes(1).
+            </Card.Text>
             <a href='#' className='linkStyling'>
               Learn more about application and dosing
             </a>

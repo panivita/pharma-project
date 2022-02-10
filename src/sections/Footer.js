@@ -1,31 +1,35 @@
-import React from "react";
-import { Container } from "react-bootstrap";
-import "./custom.css";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from 'react';
+import { Row, Col } from 'react-bootstrap';
+import Logo from '../images/leoLogo.png';
+import './custom.css';
 
 export const Footer = () => {
   return (
-    <footer className="footer-container">
-      <Container fluid="xl" id="contact">
-        <ul className="contact-details">
-          <li className="copyright">© 2020 Victoria Kush</li>
-          <li className="phone-info">
-            <a href="tel:71465372" title="nummer of the phone">
-              71 46 53 72
-            </a>
-          </li>
-          <li className="email-info">
-            <a
-              href="mailto:victoria.v.kush@gmail.com?"
-              title="e-mail"
-              subject="subject text"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              victoria.v.kush@gmail.com
-            </a>
-          </li>
-        </ul>
-      </Container>
-    </footer>
+    <Row className='footerContainer'>
+      <Col xs={12} md={2} className='logoFooter'>
+        <img alt='Leo pharma logo' src={Logo} />
+      </Col>
+      <Col xs={12} md={10} lg={6}className='footerContent'>
+        <a href='#'>Contact</a>
+        <a href='#'>Imprint</a>
+        <a href='#'>Conditions</a>
+        <a href='#'>Terms of use</a>
+        <a href='#'>Privacy</a>
+        <a href='#'>Cookie content</a>
+      </Col>
+      <Col xs={12} md={12} lg={2}className='alignRight'>
+        <p >
+          © Copyright LEO Pharma 2020
+          <br />
+          LEO and the LEO Lion Design are registered trademarks of LEO Pharma
+          <br />
+          All rights reserved
+        </p>
+        <a href='https://www.leo-pharma.ca/' >
+          LEO Pharma corporate website
+        </a>
+      </Col>
+    </Row>
   );
 };

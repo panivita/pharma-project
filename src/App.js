@@ -4,6 +4,7 @@ import { Section } from './sections/Section';
 import { AboutSection } from './sections/AboutSection';
 import { ToolsSection } from './sections/ToolsSection';
 import { VideoSection } from './sections/VideoSection';
+import { ReferencesSection } from './sections/ReferencesSection';
 import { Footer } from './sections/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -19,6 +20,8 @@ const App = () => {
         <AboutSection />
         <ToolsSection />
         <VideoSection />
+        <ReferencesSection />
+        <Footer />
       </Container>
     </>
   );

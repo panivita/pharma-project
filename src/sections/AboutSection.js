@@ -9,7 +9,7 @@ import './custom.css';
 export const AboutSection = () => {
   return (
     <Row className='twoColumnContainer'>
-      <Col xs={12} md={4} className='mainText'>
+      <Col xs={12} md={6} lg={4} className='mainText'>
         <p>Adtralza® neutralizes IL-13, a key driver of Atopic Dermatitis signs and symptoms.</p>
         <div>
           <p>
@@ -28,7 +28,7 @@ export const AboutSection = () => {
         <div className='margin'><a href='#' className='btnWatch'>Watch the video</a></div>
         <span>Duration: 2:43</span>
       </Col>
-      <Col xs={12} md={8} className=''>
+      <Col xs={12} md={6} lg={8} className='cellularImageContainer'>
         <img alt='cellular structure' src={Image} className='cellularImage'/>
       </Col>
     </Row>
