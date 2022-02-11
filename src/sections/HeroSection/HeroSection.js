@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Cover from '../images/Cover.png';
-import Logo from '../images/Adtralza-logo.png';
-import PharmaBox from '../images/pharma.jpg';
-import './custom.css';
+import Cover from '../../images/Cover.png';
+import Logo from '../../images/Adtralza-logo.png';
+import PharmaBox from '../../images/pharma.jpg';
+import './hero.css';
 
-export const Home = () => {
+export const HeroSection = () => {
   return (
     <div style={{ background: '#FAFAFA' }}>
       <section style={{ backgroundImage: `url(${Cover})` }} className='section1'>
@@ -28,7 +28,7 @@ export const Home = () => {
             It is the first and only biologic developed to specifically neutralize IL-13, a key driver of atopic
             dermatitis signs and symptoms(1,2)
           </p>
-          <p className='info3'>Learn more about how Adtralza® works and how to use it in treatment.</p>
+          <a className='info3' href='adtralza-works'>Learn more about how Adtralza® works and how to use it in treatment.</a>
         </Col>
       </Row>
     </div>

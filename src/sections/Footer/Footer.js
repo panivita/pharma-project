@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Logo from '../images/leoLogo.png';
-import './custom.css';
+import Logo from '../../images/leoLogo.png';
+import './footer.css';
 
 export const Footer = () => {
   return (

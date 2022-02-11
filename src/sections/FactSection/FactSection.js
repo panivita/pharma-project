@@ -2,11 +2,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Image from '../images/imageSection.jpg';
+import Image from '../../images/imageSection.jpg';
 
-import './custom.css';
+import './fact.css';
 
-export const AboutSection = () => {
+export const FactSection = () => {
   return (
     <Row className='twoColumnContainer'>
       <Col xs={12} md={6} lg={4} className='mainText'>

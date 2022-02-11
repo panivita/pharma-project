@@ -1,9 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import ToolsImage1 from '../images/section-image-1.png';
-import ToolsImage2 from '../images/section-image-2.png';
+import ToolsImage1 from '../../images/section-image-1.png';
+import ToolsImage2 from '../../images/section-image-2.png';
 import { Card, Row, Col } from 'react-bootstrap';
-import './custom.css';
+import './tools.css';
 
 export const ToolsSection = () => {
   return (

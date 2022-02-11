@@ -1,7 +1,7 @@
 import React from 'react';
 import Iframe from 'react-iframe';
 import { Row, Col } from 'react-bootstrap';
-import './custom.css';
+import './video.css';
 
 export const VideoSection = () => {
   const videos = ['zGGqxT-oMGg', 'rlM5pgSU1Ag', 'F7d2oTpkM-0', 'jCYWnPuO3YM'];

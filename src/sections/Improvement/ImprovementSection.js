@@ -2,16 +2,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
-import Ellipse from '../images/Ellipse.png';
-import Line from '../images/Line.png';
-import Icon1 from '../images/icon1.svg';
-import Icon2 from '../images/icon2.svg';
-import './custom.css';
+import Ellipse from '../../images/Ellipse.png';
+import Line from '../../images/Line.png';
+import Icon1 from '../../images/icon1.svg';
+import Icon2 from '../../images/icon2.svg';
+import './improvement.css';
 
-export const Section = () => {
+export const ImprovementSection = () => {
   return (
     <Row className='mainContainer'>
-      <Col xs={12} md={4} lg={3} className='centerContainer'>
+      <Col xs={12} md={6} lg={3} className='centerContainer'>
         <div className='ellipseContainer'>
           <div className='positionContainer'>
             <img alt='ellipse' src={Ellipse} className='ellipseSize' />
@@ -35,7 +35,7 @@ export const Section = () => {
           See efficacy and trial data
         </a>
       </Col>
-      <Col xs={12} md={4} lg={3} className='centerContainer'>
+      <Col xs={12} md={6} lg={3} className='centerContainer'>
         <div className='ellipseContainer'>
           <div className='positionContainer'>
             <img alt='ellipse' src={Ellipse} className='ellipseSize' />
@@ -56,7 +56,7 @@ export const Section = () => {
           Learn more about quality of life improvements
         </a>
       </Col>
-      <Col xs={12} md={4} lg={3} className='centerContainer'>
+      <Col xs={12} md={6} lg={3} className='centerContainer lastContainer'>
         <div className='ellipseContainer'>
           <div className='positionContainer'>
             <img alt='ellipse' src={Ellipse} className='ellipseSize' />

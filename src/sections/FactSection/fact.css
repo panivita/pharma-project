@@ -1,0 +1,72 @@
+.twoColumnContainer.row {
+    background: #EEEEEE;
+    padding: 5% 12%;
+    justify-content: space-between;
+}
+
+.mainText div {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+
+.mainText>p {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+    color: #00609C;
+}
+
+.mainText p {
+    margin-bottom: 2rem;
+}
+
+.mainText span {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.cellularImage {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.margin {
+    margin: 10% 0 5%
+}
+
+.btnWatch {
+    background: #C017A2;
+    border-radius: 100px;
+    color: white;
+    padding: 2% 4%;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.72px;
+    text-align: center;
+}
+
+.btnWatch:hover {
+    background: white;
+    border: 2px solid #C017A2;
+    color: #C017A2;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .mainText.col-md-4 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .cellularImageContainer {
+        display: flex;
+    }
+
+    .cellularImage {
+        align-self: center;
+    }
+}
