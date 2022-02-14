@@ -15,12 +15,11 @@
  }
 
  .footerContent a, .footerContent a:hover {
-     opacity: 0.5;
      align-self: flex-end;
-     color: #FFFFFF;
+     color: whitesmoke;
      text-decoration: none;
      font-family: Arial;
-     border-right: 1px solid white;
+     border-right: 1px solid whitesmoke;
      padding-right: 15px
  }
 

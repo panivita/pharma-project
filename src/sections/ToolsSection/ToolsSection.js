@@ -9,9 +9,9 @@ export const ToolsSection = () => {
   return (
     <Row className='cardsContainer'>
       <h3>Clinical tools - at a glance</h3>
-      <Col xs={12} md={6} className='mainText'>
+      <Col xs={12} md={5} className='mainText'>
         <Card className='cardContent'>
-          <Card.Img variant='top' src={ToolsImage1} />
+          <Card.Img variant='top' src={ToolsImage1} alt='Adtralza dosing'/>
           <Card.Body>
             <Card.Title>Dosing guide</Card.Title>
             <Card.Text className='cardTextContent'>
@@ -23,9 +23,9 @@ export const ToolsSection = () => {
           </Card.Body>
         </Card>
       </Col>
-      <Col xs={12} md={6} className='mainText'>
+      <Col xs={12} md={5} className='mainText'>
         <Card className='cardContent'>
-          <Card.Img variant='top' src={ToolsImage2} />
+          <Card.Img variant='top' src={ToolsImage2} alt='Patient injection'/>
           <Card.Body>
             <Card.Title>Patient injection made simple</Card.Title>
             <Card.Text>

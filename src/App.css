@@ -4,3 +4,7 @@
   font-weight: 400;
   text-align: left;
 }
+
+.row {
+  --bs-gutter-x: 0;
+}

@@ -15,8 +15,7 @@
 .inputContainer input {
     height: 51px;
     mix-blend-mode: normal;
-    opacity: 0.2;
-    border: 1px solid #000000;
+    border: 1px solid rgb(0, 0, 0, 0.2);
     box-sizing: border-box;
     border-radius: 25.5px;
     border-right: none;

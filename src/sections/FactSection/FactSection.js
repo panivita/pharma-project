@@ -28,7 +28,7 @@ export const FactSection = () => {
         <div className='margin'><a href='#' className='btnWatch'>Watch the video</a></div>
         <span>Duration: 2:43</span>
       </Col>
-      <Col xs={12} md={6} lg={8} className='cellularImageContainer'>
+      <Col xs={12} md={6} lg={7} className='cellularImageContainer'>
         <img alt='cellular structure' src={Image} className='cellularImage'/>
       </Col>
     </Row>
