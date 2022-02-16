@@ -12,7 +12,7 @@ export const VideoSection = () => {
       <Row xs={1} md={2} className='g-4'>
         {videos.map((videoUrl, idx) => (
           <Col className='videoContent' key={idx}>
-            <Iframe width='50%' url={`https://www.youtube.com/embed/${videoUrl}`} title='Atopic Eczema' />
+            <Iframe width='50%' rel="preconnect" url={`https://www.youtube.com/embed/${videoUrl}`} title='Atopic Eczema' />
             <div className='videoText'>
               <p className='text1'>Video title</p>
               <p className='tex2'>

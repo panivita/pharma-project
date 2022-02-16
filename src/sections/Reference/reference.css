@@ -8,9 +8,9 @@
     padding: 0;
 }
 
-.accordion-collapse.collapse div{
-    padding: 5% 12%;
-    background-color: #EEEEEE;
+.accordion-collapse.collapse .textReferences, .textReferences {
+    padding: 2% 12%;
+    background-color: white;
     font-size: 20px;
 }
 
@@ -21,6 +21,33 @@
     color: #00609C;
     align-self: center;
     margin-left: 1rem;
+}
+
+.textReferences .accordion-item {
+    border: none;
+}
+
+.textReferences .accordion-header {
+    margin-bottom: 2%;
+}
+
+.textReferences .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.textReferences .accordion-button {
+    background-color: #EEEEEE;
+    color: #00609C;
+    font-weight: bold;
+}
+
+.textReferences .accordion-button:focus, .textReferences .accordion-button:hover, .textReferences .accordion-button:not(.collapsed) {
+    border-color: #00609C;
+    outline: 0;
+    box-shadow: none;
+    background: #EEEEEE;
+    color: #00609C;
 }
 
 @media screen and (max-width: 480px) {

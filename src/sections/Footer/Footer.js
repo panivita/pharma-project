@@ -26,7 +26,7 @@ export const Footer = () => {
           <br />
           All rights reserved
         </p>
-        <a href='https://www.leo-pharma.ca/' >
+        <a href='https://www.leo-pharma.ca/' rel="preconnect">
           LEO Pharma corporate website
         </a>
       </Col>

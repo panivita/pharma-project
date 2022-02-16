@@ -8,9 +8,12 @@ ul {
     width: 81%;
 }
 
+.mobileNavContainer.navbar {
+    display: none;
+}
+
 .navItem1, .navItem2, .navItem3 {
     display: inline-block;
-    position: relative;
     z-index: 100;
     width: max-content;
 }
@@ -20,7 +23,7 @@ ul {
 }
 
 .navItem2, .navItem3 {
-    padding: 25px 10px;
+    padding: 19px 10px;
 }
 
 .drop {
@@ -28,6 +31,15 @@ ul {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0px;
+    position: relative;
+}
+
+.secondLevelMenu {
+    left: 3%;
+}
+
+.lastLevelMenu {
+    left: 48.8%;
 }
 
 .secondLevelMenu, .lastLevelMenu {
@@ -37,7 +49,6 @@ ul {
     line-height: 20px;
     letter-spacing: 0px;
     position: absolute;
-    left: 0;
     top: 100%;
     padding: 0 1000em;
     margin: 0 -1000em;
@@ -68,21 +79,27 @@ ul {
 }
 
 .navItem1:hover .drop::after, .navItem2:hover .navBorder::after {
-    content: " ";
+    content: '';
     position: absolute;
     border-top: none;
-    bottom: 0;
-    right: 50%;
-    border-right: 7px solid transparent;
-    border-left: 7px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
 }
 
 .navItem1:hover .drop::after {
-    border-bottom: 7px solid #EEEEEE;
+    border-bottom: 10px solid #EEEEEE;
+    bottom: -50%;
+    right: 45%;
 }
 
 .navItem2:hover .navBorder::after {
-    border-bottom: 7px solid #00609C;
+    border-bottom: 10px solid #00609C;
+    bottom: -100%;
+    right: 40%;
+}
+
+.navBorder {
+    position: relative;
 }
 
 .navItem2:hover .navBorder {
@@ -108,30 +125,27 @@ ul {
 
 @media screen and (max-width: 768px) {
     .navContainer {
-        width: 87%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .navContainer {
-        width: 99%;
-    }
-
-    .navContainer, .secondLevelMenu, .lastLevelMenu {
-        flex-direction: column;
-    }
-
-    .navItem1:hover .drop {
-        border-bottom: 1px solid black;
-    }
-
-    .navItem1:hover .drop::after, .navItem2:hover .navBorder::after {
         display: none;
     }
 
-    .navContainer li, .secondLevelMenu li, .lastLevelMenu li {
-        padding: 5px;
+    .mobileNavContainer.navbar {
+        display: block;
     }
 
+    .mobileNavContainer.navbar>.container-fluid {
+        justify-content: flex-end;
+    }
 
+    .custom-nav .nav-link, .custom-nav .nav-link:hover {
+        color: black;
+    }
+
+    .dropdown-menu.show {
+        background: #eeeeee !important;
+    }
+    .secondLevelMenu .dropdown-menu.show {
+        background: #00609C !important;
+    }
 }
+
+@media screen and (max-width: 480px) {}
