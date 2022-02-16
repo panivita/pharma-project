@@ -8,7 +8,7 @@
     padding: 0;
 }
 
-.accordion-collapse.collapse {
+.accordion-collapse.collapse div{
     padding: 5% 12%;
     background-color: #EEEEEE;
     font-size: 20px;

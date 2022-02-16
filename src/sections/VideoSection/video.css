@@ -26,6 +26,10 @@
     margin-bottom: 1rem;
 }
 
+.g-4.row {
+    justify-content: space-between;
+}
+
 @media screen and (max-width: 820px) {
     .videoContent {
         flex-direction: column;
@@ -38,5 +42,11 @@
     .videoText {
         margin-top: 1rem;
         margin-bottom: -2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .row-cols-md-2 .videoContent {
+        width: 48%;
     }
 }

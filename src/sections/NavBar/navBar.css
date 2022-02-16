@@ -1,29 +1,62 @@
-.firstLevelMenu, .secondLevelMenu, .lastLevelMenu {
-    margin-bottom: 0;
+ul {
     list-style-type: none;
-    padding: 1% 12%;
+}
+
+.navContainer {
+    position: relative;
+    margin: 20px auto;
+    width: 81%;
+}
+
+.navItem1, .navItem2, .navItem3 {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    width: max-content;
+}
+
+.navItem1 {
+    padding: 5px 10px;
+}
+
+.navItem2, .navItem3 {
+    padding: 25px 10px;
+}
+
+.drop {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0px;
+}
+
+.secondLevelMenu, .lastLevelMenu {
     display: flex;
     font-family: Source Sans Pro;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: 0px;
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 0 1000em;
+    margin: 0 -1000em;
+    z-index: 101;
+    visibility: hidden;
 }
 
-.firstLevelMenu li, .secondLevelMenu li, .lastLevelMenu li {
-    width: max-content;
-    margin-right: 4%;
+.navItem1:hover>ul, .navItem2:hover>ul {
+    visibility: visible;
+    opacity: 1;
 }
 
-.firstLevelMenu a, .secondLevelMenu a, .lastLevelMenu a {
+.navContainer a, .secondLevelMenu a, .lastLevelMenu a {
     text-decoration: none;
 }
 
-.firstLevelMenu a, .firstLevelMenu a:hover {
+.navContainer a, .navContainer a:hover {
     color: black;
 }
-
-
 
 .secondLevelMenu {
     background: #E6E7E8;
@@ -34,32 +67,31 @@
     color: #00609C;
 }
 
-.secondLevelMenu li:first-child {
-    padding-bottom: 2px;
-    border-bottom: 1px solid #00609C;
-}
-
-
-
-.secondLevelMenu:after, .lastLevelMenu:after {
+.navItem1:hover .drop::after, .navItem2:hover .navBorder::after {
     content: " ";
     position: absolute;
     border-top: none;
-    top: -13%;
+    bottom: 0;
+    right: 50%;
     border-right: 7px solid transparent;
     border-left: 7px solid transparent;
 }
 
-.secondLevelMenu:after {
-    right: 76%;
+.navItem1:hover .drop::after {
     border-bottom: 7px solid #EEEEEE;
 }
 
-
-
-.lastLevelMenu:after {
-    right: 86%;
+.navItem2:hover .navBorder::after {
     border-bottom: 7px solid #00609C;
+}
+
+.navItem2:hover .navBorder {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #00609C;
+}
+
+.navItem3:hover a {
+    border-bottom: 1px solid white;
 }
 
 .lastLevelMenu {
@@ -74,24 +106,32 @@
     color: #00609C;
 }
 
-@media screen and (max-width: 820px) {
-    .firstLevelMenu, .secondLevelMenu, .lastLevelMenu {
-        flex-wrap: wrap;
+@media screen and (max-width: 768px) {
+    .navContainer {
+        width: 87%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navContainer {
+        width: 99%;
     }
 
-    .secondLevelMenu::after, .lastLevelMenu::after {
-        display: none;
+    .navContainer, .secondLevelMenu, .lastLevelMenu {
+        flex-direction: column;
     }
 
-    .firstLevelMenu li:nth-child(2), .lastLevelMenu li:first-child {
-        padding-bottom: 2px;
-    }
-
-    .firstLevelMenu li:nth-child(2) {
+    .navItem1:hover .drop {
         border-bottom: 1px solid black;
     }
 
-    .lastLevelMenu li:first-child {
-        border-bottom: 1px solid white;
+    .navItem1:hover .drop::after, .navItem2:hover .navBorder::after {
+        display: none;
     }
+
+    .navContainer li, .secondLevelMenu li, .lastLevelMenu li {
+        padding: 5px;
+    }
+
+
 }
